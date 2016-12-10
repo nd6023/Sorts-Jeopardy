@@ -1,52 +1,4 @@
-------------------------------------------------------------------------
-This is the project README file. Here, you should describe your project.
-Tell the reader (someone who does not know anything about this project)
-all he/she needs to know. The comments should usually include at least:
-------------------------------------------------------------------------
+PROJECT TITLE: Sort Jeopardy
+VERSION or DATE: 1.0  12/12/2016
 
-PROJECT TITLE: Greenfoot Jeopardy
-PURPOSE OF PROJECT: Present questions and answers in a Jeopardy-like manner.
-VERSION or DATE: 1.0  1/16/2011
-HOW TO START THIS PROJECT:
-Press the run button and select the question file to run. Choose to use a timer
-or display multiple choice answers by clicking the buttons. When your settings
-are complete, click the "Continue" button.
-AUTHORS: Ed Parrish adapted from the Quiz game by Michael Berry.
-USER INSTRUCTIONS:
-Test your Greenfoot and Java knowledge with this Jeopardy-like game!
-
-Start with the basics.txt file and then move on to basics2.txt. All questions
-are from the first 4 chapters of the Greenfoot book.
-
-The Game Settings screen allows you to adjust how the game operates:
-
-o Use Timer: if set to "On", you have 15 seconds to select a "question"
-
-o Display multiple choices: if set to "On", an answer has multiple question
-  choices to chose from. If set to "Off", you decide if your answer was
-  correct.
-
-o Question file: choose a set of questions for the game. You have two files
-  you can choose from at this time: "basics.txt" and "basics2.txt". The first
-  file is the easier of the two. The second file includes a "Final Jeopardy"
-  style question.
-
-Each question you get correct is worth a set amount of points. In the final
-round you can wager on your ability to get the correct question.
-
-Also, take a look at the GUIComponents: Label, Button and TextField. These are
-Java Swing-like components implemented in Greenfoot.
-
-DESIGN NOTES:
-The design started as an adaptation of the Quiz game developed by Michael
-Berry. The original classes, Question and Answer, have changed somewhat but the
-basic design is from the Quiz game.
-
-My contributions include the main board, several screens for the game and the
-GUIComponent system that includes labels, buttons and text fields. Also, I
-worked out the main flow of the game and added the ability to load questions
-from files.
-
-You can add your own question sets to the game. I have included two example
-questions files in the game: basics.txt and basics2.txt. These files contain
-questions from the first 4 chapters of the Greenfoot book.
+For the CMPE202 project, following modules have been implemented:1.	Sorting Tutorial. User will come to know how sorting works. Five sorting tutorials have implemented:	a.	Bubble sort	b.	Insertion sort	c.	Selection sort	d.	Quick sort	e.	Merge sort2.	Multiplayer Jeopardy Game. This game will test the sorting knowledge of the players.In order to implement the multiplayer logic, RESTful APIs have developed.Technology stack:1.	Tomcat 82.	AWS3.	Greenfoot4.	Java/J2EE5.	Jersey6.	Jax-rs7.	MongoDBSteps to deploy the RESTful Web Services: -1.	Create AWS EC2 instance.2.	Log into the AWS EC2 instance using ssh.3.	Install Tomcat and MongoDB on the AWS EC2 instance4.	Verify that the MongoDB and Tomcat are running fine on the AWS instance. 5.	Build the REST services and create .war file. 6.	Copy the .war file to the AWS EC2 instance using scp.7.	Place the .war file is moved to the AWS machine and placed in the “webapp” directory of the tomcat server.8.	Restart the tomcat server.9.	Verify that the RESTful services are up and running.

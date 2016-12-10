@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=FinalScore
+comment0.text=\n\ Write\ a\ description\ of\ class\ FinalScore\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=
+comment1.target=java.lang.String\ getGameID()
+comment2.params=gameID
+comment2.target=void\ setGameID(java.lang.String)
+comment3.params=
+comment3.target=java.lang.String\ getScore()
+comment4.params=score
+comment4.target=void\ setScore(java.lang.String)
+comment5.params=
+comment5.target=java.lang.String\ getPlayerName()
+comment6.params=playerName
+comment6.target=void\ setPlayerName(java.lang.String)
+comment7.params=gameID\ score\ playerName
+comment7.target=FinalScore(java.lang.String,\ java.lang.String,\ java.lang.String)
+comment8.params=
+comment8.target=FinalScore()
+comment9.params=
+comment9.target=java.lang.String\ toString()
+numComments=10

@@ -1,0 +1,265 @@
+# Single Round
+# Category format = :CATX:Category name, where X is the catgory number.
+# Question format = :QUESTX:$:Question test, where X is the question number
+#     and $ is the value displayed for the question.
+# Questions are linked to categories in groups of 5. For example, questions 1
+#     to 5 are in category 1, questions 6 to 10 in category 2, and so on.
+# Answer format = :ANSWERX:T/F:Answer text, where X is the question number and
+#     T/F is either T (for true) or F (for false). Answers are optional.
+# Answer order format = :ANSWERORDER1:randomized to shuffle the answers. Skip
+#     this statement if you do not wnat to randomize answers.
+# Explanation format = :EXPLANATIONX:Explanation text, where X is the question
+#     number. Note that you can force new lines using \n.
+
+:CAT1:GREENFOOT: Easy
+
+:QUEST1:100:Which of the following best describes sorting ?
+:ANSWER1:T:Arranging the data (record) in some given order
+:ANSWER1:F:Accessing and processing each record exactly once
+:ANSWER1:F:Finding the location of the record with a given key
+:ANSWER1:F:Adding a new record to the data structure
+:ANSWERORDER1:randomized
+:EXPLANATION1:
+
+:QUEST2:200:A pivot element to partition unsorted list is used in
+:ANSWER2:T:Quick Sort
+:ANSWER2:F:Merge Sort
+:ANSWER2:F:Insertion Sort
+:ANSWER2:F:Selection Sort
+:ANSWERORDER2:randomized
+:EXPLANATION2:
+
+:QUEST3:300:The following sorting algorithms maintain two sub-lists, one sorted and one to be sorted 
+:ANSWER3:F:Selection Sort
+:ANSWER3:F:Insertion Sort
+:ANSWER3:F:Merge Sort
+:ANSWER3:T:both A & B
+:ANSWERORDER3:randomized
+:EXPLANATION3:
+
+:QUEST4:400:Which of the following algorithm pays the least attention to the ordering of the elements in the input list?
+:ANSWER4:T:Selection sort
+:ANSWER4:F:Insertion sort
+:ANSWER4:F:Quick sort
+:ANSWER4:F:None
+:ANSWERORDER4:randomized
+:EXPLANATION4:
+
+:QUEST5:500:A sort which compares adjacent elements in a list and switches where necessary is
+:ANSWER5:T:bubble sort
+:ANSWER5:F:insertion sort
+:ANSWER5:F:heap sort
+:ANSWER5:F:quick sort
+:ANSWERORDER5:randomized
+:EXPLANATION5:
+
+:CAT2:Beginner
+
+:QUEST6:100:Sorting is not useful for
+:ANSWER6:T:minimizing the storage needed
+:ANSWER6:F:report generation
+:ANSWER6:F:making searching easier and efficient
+:ANSWER6:F:responding to queries easily
+:ANSWERORDER6:randomized
+:EXPLANATION6:
+
+:QUEST7:200:A sort which iteratively passes through a list to exchange the first element with any element less than it and then repeats with a new first element is called
+:ANSWER7:T:insertion sort
+:ANSWER7:F:selection sort
+:ANSWER7:F:heap sort
+:ANSWER7:F:quick sort
+:ANSWERORDER7:randomized
+:EXPLANATION7:
+
+:QUEST8:300:The way a card game player arranges his cards as he picks them one by one can be compared to
+:ANSWER8:T:Insertion sort
+:ANSWER8:F:Quick sort
+:ANSWER8:F:Merge sort
+:ANSWER8:F:Bubble sort
+:ANSWERORDER8:randomized
+:EXPLANATION8:
+
+:QUEST9:400:You have a sorted array and now you are given an element to be placed in that array so that the resulting array is also sorted, the best sorting technique in this case is
+:ANSWER9:T:Insertion sort
+:ANSWER9:F:Merge sort
+:ANSWER9:F:Quick sort
+:ANSWER9:F:Bubble sort
+:ANSWERORDER9:randomized
+:EXPLANATION9:
+
+:QUEST10:500:Sorting is not possible by using which of the following methods?
+:ANSWER10:T:Deletion
+:ANSWER10:F:Partitioning.
+:ANSWER10:F:Exchange
+:ANSWER10:F:Selection
+:ANSWERORDER10:randomized
+:EXPLANATION10:
+
+:CAT3:Advanced
+
+:QUEST11:100:Which of the following sorting procedure is the slowest?
+:ANSWER11:T:Bubble sort
+:ANSWER11:F:Quick sort   
+:ANSWER11:F:Heap sort  
+:ANSWER11:F:Shell sort 
+:ANSWERORDER11:randomized
+:EXPLANATION11:
+
+:QUEST12:200:What operation does the Insertion Sort use to move numbers from the unsorted section to the sorted section of the list? 
+:ANSWER12:T:Swapping
+:ANSWER12:F:Finding the minimum value
+:ANSWER12:F:Finding out an pivot value
+:ANSWER12:F:None of the above
+:ANSWERORDER12:randomized
+:EXPLANATION12:
+
+:QUEST13:300:Selection sort first finds the .......... element in the list and put it in the first position.
+:ANSWER13:T:Smallest element
+:ANSWER13:F:Middle element
+:ANSWER13:F:Largest element
+:ANSWER13:F:Last element
+:ANSWERORDER13:randomized
+:EXPLANATION13:
+
+:QUEST14:400:Straight selection sort is basically a method of repeated
+:ANSWER14:T:position adjustment
+:ANSWER14:F:interchange
+:ANSWER14:F:searching
+:ANSWER14:F:None of the above
+:ANSWERORDER14:randomized
+:EXPLANATION14:
+
+:QUEST15:500:Quick sort running time depends on the selection of
+:ANSWER15:T:pivot element
+:ANSWER15:F:size of array
+:ANSWER15:F:sequence of values
+:ANSWER15:F:none of the above!
+:ANSWERORDER15:randomized
+:EXPLANATION15:
+
+:CAT4:Expert
+
+:QUEST16:100:For the improvement of efficiency of quick sort the pivot can be
+:ANSWER16:T:the mean element
+:ANSWER16:F:the first element
+:ANSWER16:F:the last element
+:ANSWER16:F:None of the above
+:ANSWERORDER16:randomized
+:EXPLANATION16:
+
+:QUEST17:200:Quick sort is also known as ........
+:ANSWER17:F:partition and exchange sort
+:ANSWER17:T:merge sort
+:ANSWER17:F:tree sort
+:ANSWER17:F:shell sort
+#:ANSWERORDER17:randomized
+:EXPLANATION17:
+
+:QUEST18:300:In quick sort, the number of partitions into which the file of size n is divided by a selected record is
+:ANSWER18:T:2
+:ANSWER18:F:n
+:ANSWER18:F:n-1
+:ANSWER18:F:None of the above
+:ANSWERORDER18:randomized
+:EXPLANATION18:
+
+:QUEST19:400:Which of the following algorithm design technique is used in the quick sort algorithm?
+:ANSWER19:T:Divide and conquer
+:ANSWER19:F:Dynamic programming
+:ANSWER19:F:Backtracking
+:ANSWER19:F:Greedy method
+:ANSWERORDER19:randomized
+:EXPLANATION19:
+
+:QUEST20:500:Merge sort uses ?
+:ANSWER20:T:Divide and conquer strategy
+:ANSWER20:F:Backtracking approach
+:ANSWER20:F:Heuristic search
+:ANSWER20:F:Greedy approach
+:ANSWERORDER20:randomized
+:EXPLANATION20:
+
+:CAT5:AT Proficient
+
+:QUEST21:100:The operation that combines the element is of A and B in a single sorted list C with n=r+s element is called ....
+:ANSWER21:T:Merging
+:ANSWER21:F:Inserting
+:ANSWER21:F:Mixing
+:ANSWER21:F:Sharing
+:ANSWERORDER21:randomized
+:EXPLANATION21:
+
+:QUEST22:200:After each iteration in bubble sort
+:ANSWER22:T:at least one element is at its sorted position.
+:ANSWER22:F:one less comparison is made in the next iteration.
+:ANSWER22:F:Both A & B are true.
+:ANSWER22:F:Neither A or B are true.
+:ANSWERORDER22:randomized
+:EXPLANATION22:
+
+:QUEST23:300:Bubble sort algorithm that repeatedly steps through the list to be sorted, compares each pair of adjacent items and ....... them if they are in the wrong order.
+:ANSWER23:F:Merges
+:ANSWER23:F:Deletes
+:ANSWER23:T:Swaps
+:ANSWER23:F:Iterates
+#:ANSWERORDER23:randomized
+:EXPLANATION23:
+
+:QUEST24:400:This expression will produce a random number between -45 and +45.
+:ANSWER24:T:Greenfoot.getRandomNumber(91) - 45
+:ANSWER24:F:Greenfoot.getRandomNumber(45, -45)
+:ANSWER24:F:Greenfoot.getRandomNumber(-90) + 45
+:ANSWER24:F:Greenfoot.getRandomNumber(-45, 45)
+:ANSWERORDER24:randomized
+:EXPLANATION24:The Greenfoot method getRandomNumber() returns a random number between 0 (inclusive) and an upper limit (exclusive). Thus the method Greenfoot.getRandomNumber(91) returns a random number between 0 and 90. By subtracting 45, the number shifts to between -45 and +45.
+
+:QUEST25:500:How many swaps are required to sort the given array using bubble sort - { 2, 5, 1, 3, 4}
+:ANSWER25:T:4
+:ANSWER25:F:5
+:ANSWER25:F:6
+:ANSWER25:F:7
+:ANSWERORDER25:randomized
+:EXPLANATION25:
+
+:CAT6:Miscellaneous
+
+:QUEST26:100:Which statement says x is positive?
+:ANSWER26:T:x > 0
+:ANSWER26:F:0 > x
+:ANSWER26:F:x < 0
+:ANSWER26:F:x >= 0
+:ANSWERORDER26:randomized
+:EXPLANATION26:A positive number must be a number greater than zero. The relational operator > means "greater than". So, In above cases, expression (x > 0) means, "x is positive".
+
+:QUEST27:200:Which statement says x is negative?.
+:ANSWER27:T:x < 0
+:ANSWER27:F:x > 0
+:ANSWER27:F:0 > x
+:ANSWER27:F:x >= 0
+:ANSWERORDER27:randomized
+:EXPLANATION27:A negative number is a number less than zero. The relational operator < means "less than". So the expression (x < 0) means, "x is negative".
+
+:QUEST28:300:Which statement says x is ZERO?.
+:ANSWER28:T:x == 0
+:ANSWER28:F:x = 0
+:ANSWER28:F:0 = x
+:ANSWER28:F:x is 0
+:ANSWERORDER28:randomized
+:EXPLANATION28:The equality operator is "==" (two equal signs). So the expression (x == 0) means, "x is zero".
+
+:QUEST29:400:Which statement says X is not equal to Y?
+:ANSWER29:T:x != y
+:ANSWER29:F:x <> y
+:ANSWER29:F:x =! y
+:ANSWER29:F:x \u2260 y
+:ANSWERORDER29:randomized
+:EXPLANATION29:The algebra symbol \u2260 is not easy to make on a standard keyboard. Thus two symbols are used for inequality: "!=". Code the symbols in the order people normally say them.
+
+:QUEST30:500:Which statement says X is greater than Y+1?
+:ANSWER30:T:x > y + 1
+:ANSWER30:F:x + y = 1
+:ANSWER30:F:x < y + 1
+:ANSWER30:F:x + 1 > y
+:ANSWERORDER30:randomized
+:EXPLANATION30:Each operand (side of the operator) can be an arithmetic expression. The arithmetic is preformed before the comparison is made.
+

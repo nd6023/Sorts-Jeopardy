@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=RestClient
+comment1.params=
+comment1.target=void\ act()
+comment2.params=key
+comment2.target=void\ getQuiz(java.lang.String)
+comment3.params=gameName\ playerName
+comment3.target=void\ postData(java.lang.String,\ java.lang.String)
+comment4.params=gameName\ questionName
+comment4.target=void\ postCurrentQuesData(java.lang.String,\ java.lang.String)
+comment5.params=gameID\ score\ time\ playerName\ quesId
+comment5.target=void\ postCurrentQuesScore(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String)
+comment6.params=gameID
+comment6.target=java.lang.String\ getCurrentQues(java.lang.String)
+comment7.params=gameID
+comment7.target=Game[]\ getCurrentGame(java.lang.String)
+comment8.params=quesId
+comment8.target=Score\ getCurrentQuestionScore(java.lang.String)
+numComments=9

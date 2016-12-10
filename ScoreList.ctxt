@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=ScoreList
+comment0.text=\n\ Write\ a\ description\ of\ class\ ScoreList\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=
+comment1.target=Score[]\ getScore()
+comment2.params=score
+comment2.target=void\ setScore(Score[])
+comment3.params=score
+comment3.target=ScoreList(Score[])
+comment4.params=
+comment4.target=ScoreList()
+comment5.params=
+comment5.target=java.lang.String\ toString()
+numComments=6

@@ -1,12 +1,6 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.awt.*;
 
-/**
- * Displays the game settings and allows the user to adjust them.
- *
- * @author Ed Parrish
- * @version 1.0  1/12/2011
- */
 public class SettingsScreen extends Actor implements ActionListener {
     private static final Color BACKGROUND = new Color(0xC6, 0xD6, 0xE0, 236);
     private static final Color FOREGROUND = new Color(0x30, 0x58, 0x7E);
@@ -22,33 +16,20 @@ public class SettingsScreen extends Actor implements ActionListener {
     private TextField fileTF;
     private String file = DEFAULT_FILE;
 
-    /**
-     * SettingsScreen constructor.
-     */
+  
     public SettingsScreen() { }
 
-    /**
-     * Sets the default filename that can be changed by the user.
-     *
-     * @param filename The default file name.
-     */
     public void setFilename(String filename) {
         file = filename;
         if (fileTF != null) fileTF.setText(filename);
     }
 
-    /**
-     * Returns the name of the file entered by the user.
-     *
-     * @return The file name entered by the user.
-     */
+   
     public String getFilename() {
         return fileTF.getText();
     }
 
-    /**
-     * Clears the display area and removes this object from the world.
-     */
+   
     public void clear() {
         world.removeObject(timerButton);
         world.removeObject(choicesButton);
@@ -58,11 +39,7 @@ public class SettingsScreen extends Actor implements ActionListener {
         world.removeObject(this);
     }
 
-    /**
-     * Respond to a actions like a button being pressed.
-     *
-     * @param c The component object that caused the action.
-     */
+   
     public void actionPerformed(GUIComponent c) {
         if (c == timerButton) {
             if (world.getProvideTimer()) {
@@ -85,19 +62,13 @@ public class SettingsScreen extends Actor implements ActionListener {
         }
     }
 
-    /**
-     * Save the world and draw it.
-     *
-     * @param w the world.
-     */
+
     public void addedToWorld(World w) {
         world = (GameManager) w;
         draw();
     }
 
-    /**
-     * Draw the screen.
-     */
+
     private void draw() {
         final int BORDER = 30;
         final int INSET = 3;
@@ -112,7 +83,6 @@ public class SettingsScreen extends Actor implements ActionListener {
         img.setColor(BACKGROUND);
         img.fill();
         img.setColor(FOREGROUND);
-        // Draw border
         for (int i = 0; i < THICKNESS; i++)  {
             img.drawRect(i + INSET, i + INSET,
                 img.getWidth() - i - i - 1 - INSET - INSET,
@@ -151,15 +121,6 @@ public class SettingsScreen extends Actor implements ActionListener {
         world.addObject(continueButton, getX(), getY() + 70);
     }
 
-    /**
-     * Method printCentered displays a single centered line.
-     *
-     * @param line The line of text to display.
-     * @param font The font to use.
-     * @param x The x-coordinate offset.
-     * @param y The y-coordinate offset.
-     * @return The y location for use in the next print operation.
-     */
     private int printCentered(String line, Font font, int x, int y) {
         final float LINE_HEIGHT_MULT = 1.2f;
         img.setFont(font);

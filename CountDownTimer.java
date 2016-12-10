@@ -6,12 +6,7 @@ import java.awt.Graphics;
 import java.util.Timer;
 import java.util.TimerTask;
 
-/**
- * Displays a count-down timer during questions.
- *
- * @author Ed Parrish
- * @version 1.0 12/01/10
- */
+
 public class CountDownTimer extends Actor {
     private static final double ASCENT_MULT = .80;
     private static final int WIDTH = 40;
@@ -26,28 +21,16 @@ public class CountDownTimer extends Actor {
     private final Color textColor = Color.WHITE;
     private final Font font = new Font("SansSerif", Font.BOLD, 48);
 
-    /**
-     * Constructs a CountDownTimer.
-     *
-     * @param seconds The duration in seconds.
-     */
     public CountDownTimer(int seconds) {
         setDuration(seconds);
         setImage(new GreenfootImage(WIDTH, HEIGHT));
     }
 
-    /**
-     * Sets the duration of the timer.
-     *
-     * @param seconds The duration in seconds.
-     */
     public void setDuration(int seconds) {
         delay = (seconds - DISPLAY_TIME) * MS_SEC;
     }
 
-    /**
-     * Starts a new timer task.
-     */
+
     public void start() {
         timer = new Timer(true);
         timer.scheduleAtFixedRate(new Task(), delay, MS_SEC);
@@ -55,35 +38,20 @@ public class CountDownTimer extends Actor {
         running = true;
     }
 
-    /**
-     * Returns if the timer is running or not.
-     *
-     * @return <code>true</code> if the timer is running; otherwise
-     *         <code>false</code>.
-     */
+  
     public boolean isRunning() {
         return running;
     }
 
-    /**
-     * Stops the time.
-     */
+
     public void stop() {
         running = false;
         if (timer != null) timer.cancel();
         getImage().clear();
     }
 
-    /**
-     * The scheduled task.
-     *
-     * @author Ed Parrish
-     * @version 1.0 12/01/10
-     */
     private class Task extends TimerTask {
-        /**
-         * Displays the count-down digits.
-         */
+     
         public void run() {
             GreenfootImage img = getImage();
             img.clear();

@@ -3,16 +3,9 @@ import java.awt.Font;
 import java.awt.Color;
 import java.awt.Dimension;
 
-/**
- * Displays the final game information and gives the player a chance to play
- * another round.
- *
- * @author Ed Parrish
- * @version 1.0  1/13/2011
- */
 public class OverScreen extends Actor implements ActionListener {
     private static final Font OVER_FONT =
-        GameManager.LARGE_FONT.deriveFont(52f);
+    GameManager.LARGE_FONT.deriveFont(52f);
     private int score;
     private GameManager world;
     private Button yesBtn;
@@ -22,23 +15,13 @@ public class OverScreen extends Actor implements ActionListener {
     private Label g, a, m, e, o, v, e2, r;
     private boolean playedFinal;
 
-    /**
-     * OverScreen constructor.
-     *
-     * @param finalScore the final score for the game.
-     * @param playedFinalRound Set <code>true</code> if the final round was
-     *        played; otherwise set to <code>false</code>.
-     */
+   
     public OverScreen(int finalScore, boolean playedFinalRound) {
         score = finalScore;
         playedFinal = playedFinalRound;
     }
 
-    /**
-     * Respond to a actions like a button being pressed.
-     *
-     * @param c The component object that caused the action.
-     */
+  
     public void actionPerformed(GUIComponent c) {
         if (c == yesBtn) {
             world.startGame();
@@ -47,9 +30,7 @@ public class OverScreen extends Actor implements ActionListener {
         }
     }
 
-    /**
-     * Clears the display area and removes this object from the world.
-     */
+   
     public void clear() {
         world.removeObject(againLabel);
         world.removeObject(finalMsg);
@@ -66,19 +47,13 @@ public class OverScreen extends Actor implements ActionListener {
         world.removeObject(this);
     }
 
-    /**
-     * Save the world and draw.
-     *
-     * @param w the world.
-     */
+   
     public void addedToWorld(World w) {
         world = (GameManager) w;
         draw();
     }
 
-    /**
-     * Draw the screen.
-     */
+   
     private void draw() {
         final int Y_ROW1 = 190;
         final int Y_ROW2 = 260;

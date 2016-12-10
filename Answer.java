@@ -10,23 +10,12 @@ public class Answer extends Actor {
     private boolean correct;
     private GameManager world;
 
-    /**
-     * Construct a new answer.
-     *
-     * @param answerText The text to display.
-     * @param answerCorrect Set <code>true</code> if the answer is correct,
-     *        otherwise set <code>false</code>.
-     */
     public Answer(String answerText, boolean answerCorrect) {
         text = answerText;
         correct = answerCorrect;
     }
 
-    /**
-     * Highlight when hovered over, and tell GameManager when
-     * we've been clicked on along with whether we're right
-     * or wrong.
-     */
+
     public void act() {
         if (Greenfoot.mouseClicked(this)) {
             if (correct) {
@@ -46,39 +35,23 @@ public class Answer extends Actor {
         }
     }
 
-    /**
-     * Returns whether the answer is correct or not.
-     *
-     * @return <code>true</code> if correct; otherwise <code>false</code>.
-     */
+
     public boolean isCorrect() {
         return correct;
     }
 
-    /**
-     * Returns the answer text.
-     *
-     * @return The answer text.
-     */
+
     public String getText() {
         return text;
     }
 
-    /**
-     * When added to the world, draw.
-     *
-     * @param w the world.
-     */
+
     public void addedToWorld(World w) {
         world = (GameManager) w;
         draw(Color.WHITE);
     }
 
-    /**
-     * Draw the answer to screen.
-     *
-     * @param colour The color in which to draw the answer.
-     */
+
     private void draw(Color colour) {
         Question question = world.getCurrentQuestion();
         int answerNumber = question.getIndex(this);

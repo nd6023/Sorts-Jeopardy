@@ -1,12 +1,6 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.awt.*;
 
-/**
- * A response displayed after each question.
- *
- * @author Ed Parrish
- * @version 1.0  11/21/10
- */
 public class Response extends Actor implements ActionListener {
     private static final int LINE_LENGTH = 60;
     private static GreenfootImage img;
@@ -15,15 +9,10 @@ public class Response extends Actor implements ActionListener {
     private Button right;
     private Button wrong;
     private GameManager world;
-    /** The type of the response. */
+   
     public enum Type { RIGHT, WRONG, SELF }
 
-    /**
-     * Create a new response with required information.
-     *
-     * @param q The Question for this response.
-     * @param t The type of this response.
-     */
+  
     public Response(Question q, Type t) {
         setQuestion(question);
         setType(t);
@@ -35,9 +24,7 @@ public class Response extends Actor implements ActionListener {
         wrong.addActionListener(this);
     }
 
-    /**
-     * Check for the end of the response.
-     */
+  
     public void act() {
         if (type != Type.SELF && (Greenfoot.isKeyDown("space")
             || Greenfoot.mouseClicked(this))) {
@@ -45,31 +32,16 @@ public class Response extends Actor implements ActionListener {
         }
     }
 
-    /**
-     * Sets the Question on which this response is based.
-     *
-     * @param newQuestion The Question on which this response is based.
-     */
     public void setQuestion(Question newQuestion) {
         question = newQuestion;
     }
 
-    /**
-     * Changes the response message based on whether the answer
-     * was correct, not correct or self-assessed.
-     *
-     * @param t Set RIGHT if a correct answer, WRONG if a wrong answer, or
-     *          SELF if self-assessed.
-     */
+
     public void setType(Type t) {
         type = t;
     }
 
-    /**
-     * Respond to a button being clicked in self-assessment mode.
-     *
-     * @param c The component object that caused the action.
-     */
+ 
     public void actionPerformed(GUIComponent c) {
         int id = c.getID();
         if (id == 0) {
@@ -79,9 +51,6 @@ public class Response extends Actor implements ActionListener {
         }
     }
 
-    /**
-     * Clears the display area and removes this object from the world.
-     */
     public void clear() {
         GreenfootImage image = getImage();
         image.setColor(Color.BLUE);
@@ -93,19 +62,12 @@ public class Response extends Actor implements ActionListener {
         world.removeObject(this);
     }
 
-    /**
-     * Save the world and draw it.
-     *
-     * @param w the world.
-     */
     public void addedToWorld(World w) {
         world = (GameManager) w;
         draw();
     }
 
-    /**
-     * Draw the response on the screen.
-     */
+ 
     private void draw() {
         final int BORDER = 30;
         String answer = question.getFirstCorrectAnswerText();
@@ -171,14 +133,6 @@ public class Response extends Actor implements ActionListener {
         setImage(img);
     }
 
-    /**
-     * Method printCentered displays a single centered line.
-     *
-     * @param line The line of text to display.
-     * @param y The y location.
-     * @param font The font to use.
-     * @return The y location for use in the next print operation.
-     */
     private int printCentered(String line, int y, Font font) {
         final float LINE_HEIGHT_MULT = 1.15f;
         img.setFont(font);

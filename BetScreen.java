@@ -4,12 +4,7 @@ import java.awt.Font;
 import java.awt.FontMetrics;
 import java.awt.Graphics;
 
-/**
- * Handles betting for the final round.
- *
- * @author Ed Parrish
- * @version 1.0  1/8/2011
- */
+
 public class BetScreen extends Actor implements ActionListener {
     private static final int ERROR_LOC_X = 300;
     private static GreenfootImage img;
@@ -20,18 +15,10 @@ public class BetScreen extends Actor implements ActionListener {
     private Label errorMsg;
 
 
-    /**
-     * BetScreen constructor.
-     *
-     * @param cat The final round category.
-     */
     public BetScreen(String cat) {
         category = cat;
     }
 
-    /**
-     * Clears the display area and removes this object from the world.
-     */
     public void clear() {
         if (betTF != null) world.removeObject(betTF);
         if (done != null) world.removeObject(done);
@@ -39,11 +26,6 @@ public class BetScreen extends Actor implements ActionListener {
         world.removeObject(this);
     }
 
-    /**
-     * Respond to actions like a button being pressed.
-     *
-     * @param c The component object that caused the action.
-     */
     public void actionPerformed(GUIComponent c) {
         int bet = 0;
         try {
@@ -61,11 +43,6 @@ public class BetScreen extends Actor implements ActionListener {
         }
     }
 
-    /**
-     * Prints an error message to the screen.
-     *
-     * @param msg The error message to print.
-     */
     public void printErrorMessage(String msg) {
         if (errorMsg == null) {
             errorMsg = new Label(msg, GameManager.MED_FONT, Color.WHITE);
@@ -75,19 +52,12 @@ public class BetScreen extends Actor implements ActionListener {
         }
     }
 
-    /**
-     * Save the world and draw it.
-     *
-     * @param w the world.
-     */
     public void addedToWorld(World w) {
         world = (GameManager) w;
         draw();
     }
 
-    /**
-     * Draw the screen.
-     */
+
     private void draw() {
         final int BORDER = 30;
         img = new GreenfootImage(world.getWidth(), world.getHeight());
@@ -120,15 +90,7 @@ public class BetScreen extends Actor implements ActionListener {
         world.addObject(done, 311, 240);
     }
 
-    /**
-     * Method printCentered displays a single centered line.
-     *
-     * @param line The line of text to display.
-     * @param font The font to use.
-     * @param x The x-coordinate offset.
-     * @param y The y-coordinate offset.
-     * @return The y location for use in the next print operation.
-     */
+
     private int printCentered(String line, Font font, int x, int y) {
         img.setFont(font);
         Graphics g = img.getAwtImage().getGraphics();
